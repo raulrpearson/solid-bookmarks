@@ -13,7 +13,7 @@
   "permissions": ["activeTab", "notifications"],
 
   "background": {
-    "scripts": ["background.js"]
+    "page": "background.html"
   },
 
   "page_action": {

@@ -1,0 +1,34 @@
+{
+  "name": "solid-bookmarks",
+  "version": "0.1.0",
+  "description": "A browser extension to save your bookmarks into a Solid pod.",
+  "main": "manifest.json",
+  "scripts": {
+    "start": "parcel build manifest.json && web-ext run --verbose --source-dir dist/",
+    "build": "parcel build manifest.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raulrpearson/solid-bookmarks.git"
+  },
+  "author": "Raúl R. Pearson <raulrpearson@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raulrpearson/solid-bookmarks/issues"
+  },
+  "homepage": "https://github.com/raulrpearson/solid-bookmarks#readme",
+  "dependencies": {
+    "lodash.startcase": "^4.4.0",
+    "lodash.uppercase": "^4.3.0",
+    "solid-auth-client": "^2.3.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.1",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "parcel-plugin-web-extension": "^1.5.2"
+  },
+  "parcelCleanPaths": [
+    "dist"
+  ]
+}
