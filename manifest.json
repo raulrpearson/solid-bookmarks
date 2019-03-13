@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Solid Bookmarks",
+  "version": "0.1",
+
+  "description": "Save bookmarks to a Solid pod.",
+
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  },
+
+  "permissions": ["activeTab", "notifications"],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "page_action": {
+    "browser_style": true,
+    "default_icon": {
+      "19": "buttons/button-19.png",
+      "38": "buttons/button-38.png"
+    },
+    "default_title": "Bookmark on Solid"
+  }
+}
